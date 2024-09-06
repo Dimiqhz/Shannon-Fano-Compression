@@ -1,19 +1,15 @@
-Символ -   :: Код - 000
-Символ - о :: Код - 001
-Символ - а :: Код - 010
-Символ - т :: Код - 011
-Символ - н :: Код - 011
-Символ - я :: Код - 1000
-Символ - с :: Код - 1001
-Символ - к :: Код - 1010
-Символ - д :: Код - 1011
-Символ - е :: Код - 11000
-Символ - М :: Код - 11001
-Символ - р :: Код - 110100
-Символ - л :: Код - 110101
-Символ - ж :: Код - 11011
-Символ - и :: Код - 111000
-Символ - в :: Код - 111001
-Символ - Ш :: Код - 11101
-Символ - - :: Код - 11110
-Символ - Ф :: Код - 11111
+The symbol is - i :: Code - 000
+The symbol is -   :: Code - 001
+The symbol is - g :: Code - 010
+The symbol is - e :: Code - 011
+The symbol is - D :: Code - 011
+The symbol is - m :: Code - 10000
+The symbol is - q :: Code - 10001
+The symbol is - h :: Code - 1001
+The symbol is - z :: Code - 1010
+The symbol is - r :: Code - 1011
+The symbol is - t :: Code - 11000
+The symbol is - n :: Code - 11001
+The symbol is - y :: Code - 1101
+The symbol is - o :: Code - 1110
+The symbol is - u :: Code - 1111
