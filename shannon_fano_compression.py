@@ -14,12 +14,10 @@ def compress_data(data):
     split = splitter([i['probability'] for i in sorted_compressor], 0)
     encoder(sorted_compressor, split)
 
-    # Сохраняем результат сжатия в файл
     compressed_text = "".join(i['code'] for i in sorted_compressor)
     with open("compressed_text.txt", "w") as output_file:
         output_file.write(compressed_text)
 
-    # Сохраняем словарь в файл
     with open("dict.txt", "w", encoding="utf-8") as dict_file:
         for i in sorted_compressor:
             dict_file.write(f"The sybmol is - {i['original']} :: Code - {i['code']}\n")
@@ -58,8 +56,6 @@ def encoder(compressor, split):
         for i in part_2:
             i['code'] += '1'
 
-
-# Основная функция
 if __name__ == '__main__':
     choice = int(input("Enter 1 to enter text manually, or 2 to download from a file: "))
     if choice == 1:
