@@ -22,7 +22,7 @@ def compress_data(data):
     # Сохраняем словарь в файл
     with open("dict.txt", "w", encoding="utf-8") as dict_file:
         for i in sorted_compressor:
-            dict_file.write(f"Символ - {i['original']} :: Код - {i['code']}\n")
+            dict_file.write(f"The sybmol is - {i['original']} :: Code - {i['code']}\n")
 
     return compressed_text
 
@@ -71,12 +71,15 @@ if __name__ == '__main__':
                 text = file.read()
         except FileNotFoundError:
             print(f"File '{file_path}' not found.")
+            print('Developed by Dimiqhz')
             exit()
     else:
         print("The wrong option is selected.")
+        print('Developed by Dimiqhz')
         exit()
 
-    print(f"Исходный текст: {text}")
+    print(f"The source text: {text}")
     compress_data(text)
     print("The data is saved to a file compressed_text.txt")
     print("The dictionary is saved to a file dict.txt")
+    print('Developed by Dimiqhz')
