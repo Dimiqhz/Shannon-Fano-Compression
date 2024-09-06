@@ -61,22 +61,22 @@ def encoder(compressor, split):
 
 # Основная функция
 if __name__ == '__main__':
-    choice = int(input("Введите 1, чтобы ввести текст вручную, или 2, чтобы загрузить из файла: "))
+    choice = int(input("Enter 1 to enter text manually, or 2 to download from a file: "))
     if choice == 1:
-        text = input("Введите текст для сжатия: ")
+        text = input("Enter the text to compress: ")
     elif choice == 2:
-        file_path = input("Укажите путь к файлу для загрузки текста: ")
+        file_path = input("Specify the path to the file to download the text: ")
         try:
             with open(file_path, 'r') as file:
                 text = file.read()
         except FileNotFoundError:
-            print(f"Файл '{file_path}' не найден.")
+            print(f"File '{file_path}' not found.")
             exit()
     else:
-        print("Выбрана неверная опция.")
+        print("The wrong option is selected.")
         exit()
 
     print(f"Исходный текст: {text}")
     compress_data(text)
-    print("Данные сохранены в файл compressed_text.txt")
-    print("Словарь сохранен в файл dict.txt")
+    print("The data is saved to a file compressed_text.txt")
+    print("The dictionary is saved to a file dict.txt")
